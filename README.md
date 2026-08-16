@@ -35,7 +35,7 @@ Ataque de enumeração smb + password spraying.
 
 	1.  Formas para conseguir burlar os bloqueios por muitas tentativas de erro já que tenta algumas senhas possíveis para muitos usuarios diferentes.
 	2. Enumerar o sistema
-		a. 'enum4linux -a 192.168.56.101' | tee enum4_output.txt
+		a. 'enum4linux -a exemplo_ip' | tee enum4_output.txt
 	3. Atacar com o "medusa" com os arquivos de testes utilizado
 		a. Medusa -h exemplo_ip -U arquivo.txt -P arquivo.txt -M stp -t 2 -T 50
 			i. -U 	informa que o arquivo é para a usuarios
@@ -48,5 +48,4 @@ Ataque de enumeração smb + password spraying.
 				1) Found demonstra o sucesso com o usuario senha (ADMIN$ -access Allowed) indica que conseguiu aessar com privilegios de administrador
 	4. Verificando se realmente o acesso esta funcionado
 		a. 'smbclient -L //exemplo_ip -U msfadmin
-			i. Tenta acessar o dispositivo (cobra a senha o usuario jafoi passado no codigo)
-<img width="959" height="1141" alt="image" src="https://github.com/user-attachments/assets/692ee0ac-a607-4b5b-8a66-dee29870ad26" />
+			i. Tenta acessar o dispositivo (cobra a senha o usuario ja foi passado no codigo)
